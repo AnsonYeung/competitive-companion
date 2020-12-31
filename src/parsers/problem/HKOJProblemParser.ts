@@ -22,8 +22,8 @@ export class HKOJProblemParser extends Parser {
       const output = row.children[2].innerHTML;
 
       task.addTest(
-        input.replace('<br>', '\n').replace('&nbsp;', ' '),
-        output.replace('<br>', '\n').replace('&nbsp;', ' '),
+        input.replace(/<br>/g, '\n').replace(/&nbsp;/g, ' '),
+        output.replace(/<br>/g, '\n').replace(/&nbsp;/g, ' '),
       );
     });
 
