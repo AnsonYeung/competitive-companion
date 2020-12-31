@@ -53,6 +53,7 @@ import { HackerRankProblemParser } from './problem/HackerRankProblemParser';
 import { HDOJProblemParser } from './problem/HDOJProblemParser';
 import { HihoCoderProblemParser } from './problem/HihoCoderProblemParser';
 import { HITOnlineJudgeProblemParser } from './problem/HITOnlineJudgeProblemParser';
+import { HKOJProblemParser } from './problem/HKOJProblemParser';
 import { HrbustOnlineJudgeProblemParser } from './problem/HrbustOnlineJudgeProblemParser';
 import { JutgeProblemParser } from './problem/JutgeProblemParser';
 import { KattisProblemParser } from './problem/KattisProblemParser';
@@ -151,6 +152,8 @@ export const parsers: Parser[] = [
 
   new HihoCoderProblemParser(),
   new HihoCoderContestParser(),
+
+  new HKOJProblemParser(),
 
   new HrbustOnlineJudgeProblemParser(),
 
