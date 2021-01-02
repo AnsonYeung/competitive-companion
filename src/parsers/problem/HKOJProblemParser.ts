@@ -18,13 +18,15 @@ export class HKOJProblemParser extends Parser {
     task.setMemoryLimit(parseFloat(limits[2]));
 
     elem.querySelectorAll('.sample').forEach(row => {
-      const input = row.children[1].innerHTML;
-      const output = row.children[2].innerHTML;
+      if (row.querySelector('.io')) {
+        const input = row.children[1].innerHTML;
+        const output = row.children[2].innerHTML;
 
-      task.addTest(
-        input.replace(/<br>/g, '\n').replace(/&nbsp;/g, ' '),
-        output.replace(/<br>/g, '\n').replace(/&nbsp;/g, ' '),
-      );
+        task.addTest(
+          input.replace(/<br>/g, '\n').replace(/&nbsp;/g, ' '),
+          output.replace(/<br>/g, '\n').replace(/&nbsp;/g, ' '),
+        );
+      }
     });
 
     return task.build();
