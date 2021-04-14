@@ -1,7 +1,7 @@
 {
   "name": "competitive-companion-with-hkoj",
   "productName": "Competitive Companion with HKOJ",
-  "version": "2.19.4.2",
+  "version": "2.19.4.3",
   "description": "Parses competitive programming problems and sends them to various tools like CHelper and Hightail.",
   "repository": "https://github.com/AnsonYeung/competitive-companion",
   "author": "Jasper van Merle",

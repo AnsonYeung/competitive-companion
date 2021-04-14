@@ -15,6 +15,7 @@ import { HackerEarthContestParser } from './contest/HackerEarthContestParser';
 import { HackerRankContestParser } from './contest/HackerRankContestParser';
 import { HDOJContestParser } from './contest/HDOJContestParser';
 import { HihoCoderContestParser } from './contest/HihoCoderContestParser';
+import { HKOJContestParser } from './contest/HKOJContestParser';
 import { KattisContestParser } from './contest/KattisContestParser';
 import { LibreOJContestParser } from './contest/LibreOJContestParser';
 import { LightOJContestParser } from './contest/LightOJContestParser';
@@ -154,6 +155,7 @@ export const parsers: Parser[] = [
   new HihoCoderContestParser(),
 
   new HKOJProblemParser(),
+  new HKOJContestParser(),
 
   new HrbustOnlineJudgeProblemParser(),
 
