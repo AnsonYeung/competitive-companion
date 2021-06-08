@@ -58,7 +58,7 @@ export class HKOJProblemParser extends Parser {
     const limitsStr = elem.querySelector('.task-info').textContent;
     const limits = /: ([0-9.]*).*\n.*: ([0-9.]*)/.exec(limitsStr);
 
-    task.setTimeLimit(parseFloat(limits[1]));
+    task.setTimeLimit(parseFloat(limits[1]) * 1000);
     task.setMemoryLimit(parseFloat(limits[2]));
     if (testAvailable) {
       elem.querySelectorAll('.sample').forEach(row => {
